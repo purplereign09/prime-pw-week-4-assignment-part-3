@@ -3,30 +3,15 @@ console.log('***** Cart Functions *****');
 // We want to see how you are testing your code!!!
 //Create a global variable named `basket` and set it to an empty array.
 
-//- Create a function called `addItem`. It should:
-//  - take an input parameter for a string `item`
-//  - add the new item to the global array `basket`.
-//  - return `true` indicating the item was added
 
-//- Create a function called `listItems`. It should:
-  //- loop over the items in the `basket` array
-  //- console.log each individual item on a new line
 
-//- Create a function called `empty`. It should:
-  //- reset the `basket` to an empty array
-//  For example, to test `addItem`:
-//  ```
-  //console.log(`Basket is ${basket}`);
-  //console.log('Adding apples (expect true)', addItem('apples'));
-  //console.log(`Basket is now ${basket}`);
-  //```
+  //- Create a function called `addItem`. It should:
+  //  - take an input parameter for a string `item`
+  //  - add the new item to the global array `basket`.
+  //  - return `true` indicating the item was added
 
 let basket = [];
 //global variable named basket set to an empty array
-
-
-
-
 
 function addItem (item){
   basket.push(item);
@@ -36,8 +21,6 @@ function addItem (item){
 }//end addItems
 
 console.log(basket);
-
-
 
 console.log(addItem('salad'));
 console.log(addItem('spinach'));
@@ -53,7 +36,7 @@ console.log(addItem('string cheese'));
 function listItems(){
   for(let i=0; i<basket.length; i++) {
     console.log('Cart contents:', basket[i]);
-    //console.log('test');
+    //console.log each item on a new line
   }
 }
 
